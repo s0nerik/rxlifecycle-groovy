@@ -6,6 +6,7 @@ buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.1.2'
         classpath 'com.github.groovy:groovy-android-gradle-plugin:9ed9d0e'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4'
     }
 }
 
@@ -16,12 +17,18 @@ repositories {
 
 apply plugin: 'com.android.library'
 apply plugin: 'groovyx.android'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.s0nerik'
 
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.0"
     defaultConfig {
         minSdkVersion 14
+    }
+    buildTypes {
+        release {}
     }
 }
 
