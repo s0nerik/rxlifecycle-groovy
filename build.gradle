@@ -27,9 +27,6 @@ android {
     defaultConfig {
         minSdkVersion 14
     }
-    buildTypes {
-        release {}
-    }
 }
 
 dependencies {
