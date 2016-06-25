@@ -1,0 +1,3 @@
+moduleName=rxlifecycle-groovy
+moduleVersion=1.0
+extensionClasses=com.github.s0nerik.rxlifecycle.groovy.RxLifecycleExtensions
