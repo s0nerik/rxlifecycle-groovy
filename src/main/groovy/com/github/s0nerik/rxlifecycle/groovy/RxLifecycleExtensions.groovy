@@ -8,22 +8,22 @@ import rx.Observable
 @CompileStatic
 class RxLifecycleExtensions {
     static <T> Observable<T> bindToLifecycle(final Observable<T> observable, ActivityLifecycleProvider activity) {
-        return observable.compose((Observable.Transformer<T, T>) { activity.bindToLifecycle() })
+        return observable.compose(activity.bindToLifecycle())
     }
 
     static <T> Observable<T> bindUntilEvent(final Observable<T> observable, ActivityLifecycleProvider activity, ActivityEvent event) {
-        return observable.compose((Observable.Transformer<T, T>) { activity.bindUntilEvent(event) })
+        return observable.compose(activity.bindUntilEvent(event))
     }
 
     static <T> Observable<T> bindToLifecycle(final Observable<T> observable, FragmentLifecycleProvider fragment) {
-        return observable.compose((Observable.Transformer<T, T>) { fragment.bindToLifecycle() })
+        return observable.compose(fragment.bindToLifecycle())
     }
 
     static <T> Observable<T> bindUntilEvent(final Observable<T> observable, FragmentLifecycleProvider fragment, FragmentEvent event) {
-        return observable.compose((Observable.Transformer<T, T>) { fragment.bindUntilEvent(event) })
+        return observable.compose(fragment.bindUntilEvent(event))
     }
 
     static <T> Observable<T> bindToLifecycle(final Observable<T> observable, View view) {
-        return observable.compose((Observable.Transformer<T, T>) { RxLifecycle.bindView(view) })
+        return observable.compose(RxLifecycle.bindView(view))
     }
 }
