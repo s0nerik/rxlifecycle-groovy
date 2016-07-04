@@ -1,5 +1,5 @@
 # rxlifecycle-groovy
-RxLifecycle extension methods for Groovy language
+[RxLifecycle](https://github.com/trello/RxLifecycle) extension methods for Groovy language
 
 A set of extension methods for RxLifecycle for Groovy users. Makes it easier to read the code.
 
