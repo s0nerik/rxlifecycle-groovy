@@ -1,5 +1,6 @@
 # rxlifecycle-groovy
 [![](https://jitpack.io/v/s0nerik/rxlifecycle-groovy.svg)](https://jitpack.io/#s0nerik/rxlifecycle-groovy)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-rxlifecycle--groovy-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3827)
 
 [RxLifecycle](https://github.com/trello/RxLifecycle) extension methods for Groovy language
 
